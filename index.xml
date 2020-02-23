@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>周末的博客</title>
+    <link>https://blog.huowenjuan/</link>
+    <description>Recent content on 周末的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Feb 2020 17:43:21 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.huowenjuan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>搜索</title>
+      <link>https://blog.huowenjuan/search/</link>
+      <pubDate>Fri, 07 Feb 2020 17:43:21 +0800</pubDate>
+      
+      <guid>https://blog.huowenjuan/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>链接</title>
+      <link>https://blog.huowenjuan/links/</link>
+      <pubDate>Thu, 06 Feb 2020 22:53:11 +0800</pubDate>
+      
+      <guid>https://blog.huowenjuan/links/</guid>
+      <description>链接 ouuan的博客</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://blog.huowenjuan/about/</link>
+      <pubDate>Wed, 05 Dec 2018 13:40:21 +0800</pubDate>
+      
+      <guid>https://blog.huowenjuan/about/</guid>
+      <description>该博客是我自我总结的地方，会不定时更新的 Q: 博客里的 XX 功能是怎么做到的啊？ A: 本博客所有代码 开源，请先自己找，还可以参考 从 Hexo 到 Hugo，找不到可</description>
+    </item>
+    
+  </channel>
+</rss>
