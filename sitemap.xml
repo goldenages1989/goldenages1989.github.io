@@ -2,21 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.huowenjuan/post/</loc>
-    <lastmod>2020-02-23T16:59:06+08:00</lastmod>
+    <loc>https://blog.huowenjuan/post/second/</loc>
+    <lastmod>2024-11-30T22:31:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.huowenjuan/post/first/</loc>
-    <lastmod>2020-02-23T16:59:06+08:00</lastmod>
+    <loc>https://blog.huowenjuan/post/</loc>
+    <lastmod>2024-11-30T22:31:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.huowenjuan/</loc>
+    <lastmod>2024-11-30T22:31:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.huowenjuan/post/first/</loc>
     <lastmod>2020-02-23T16:59:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
