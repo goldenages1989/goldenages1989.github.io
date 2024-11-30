@@ -4,49 +4,37 @@
     <title>周末的博客</title>
     <link>https://blog.huowenjuan/</link>
     <description>Recent content on 周末的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 19 Feb 2020 21:15:50 +0800</lastBuildDate>
-    
-	<atom:link href="https://blog.huowenjuan/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://blog.huowenjuan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第一篇博客</title>
       <link>https://blog.huowenjuan/post/first/</link>
       <pubDate>Wed, 19 Feb 2020 21:15:50 +0800</pubDate>
-      
       <guid>https://blog.huowenjuan/post/first/</guid>
-      <description>&lt;h2 id=&#34;一第一篇博客&#34;&gt;一、第一篇博客&lt;/h2&gt;
-&lt;p&gt;参照&lt;a href=&#34;https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/&#34; target=&#34;_blank&#34;&gt;ouuah大大&lt;/a&gt;的文章以及&lt;a href=&#34;https://github.com/ouuan/hugo-blog&#34; target=&#34;_blank&#34;&gt;模板&lt;/a&gt;进行修改，运用了&lt;a href=&#34;https://github.com/ouuan/hugo-theme-even&#34; target=&#34;_blank&#34;&gt;even&lt;/a&gt;主题&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;一第一篇博客&#34;&gt;一、第一篇博客&lt;/h2&gt;&#xA;&lt;p&gt;参照&lt;a href=&#34;https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/&#34; target=&#34;_blank&#34;&gt;ouuah大大&lt;/a&gt;的文章以及&lt;a href=&#34;https://github.com/ouuan/hugo-blog&#34; target=&#34;_blank&#34;&gt;模板&lt;/a&gt;进行修改，运用了&lt;a href=&#34;https://github.com/ouuan/hugo-theme-even&#34; target=&#34;_blank&#34;&gt;even&lt;/a&gt;主题&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>搜索</title>
       <link>https://blog.huowenjuan/search/</link>
       <pubDate>Fri, 07 Feb 2020 17:43:21 +0800</pubDate>
-      
       <guid>https://blog.huowenjuan/search/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>链接</title>
       <link>https://blog.huowenjuan/links/</link>
       <pubDate>Thu, 06 Feb 2020 22:53:11 +0800</pubDate>
-      
       <guid>https://blog.huowenjuan/links/</guid>
-      <description>链接 ouuan的博客</description>
+      <description>&lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ouuan.github.io/&#34; target=&#34;_blank&#34;&gt;ouuan的博客&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>关于</title>
       <link>https://blog.huowenjuan/about/</link>
       <pubDate>Wed, 05 Dec 2018 13:40:21 +0800</pubDate>
-      
       <guid>https://blog.huowenjuan/about/</guid>
-      <description>该博客是我自我总结的地方，会不定时更新的 Q: 博客里的 XX 功能是怎么做到的啊？ A: 本博客所有代码 开源，请先自己找，还可以参考 从 Hexo 到 Hugo，找不到可</description>
+      <description>&lt;p&gt;该博客是我自我总结的地方，会不定时更新的&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Q: 博客里的 XX 功能是怎么做到的啊？&lt;/p&gt;&#xA;&lt;p&gt;A: 本博客所有代码 &lt;a href=&#34;https://github.com/ouuan/hugo-blog&#34; target=&#34;_blank&#34;&gt;开源&lt;/a&gt;，请先自己找，还可以参考 &lt;a href=&#34;https://blog.huowenjuan/post/from-hexo-to-hugo/#process&#34;&gt;从 Hexo 到 Hugo&lt;/a&gt;，找不到可以在评论区问。&lt;/p&gt;&#xA;&lt;p&gt;Q: 为什么大部分题解里的题意简述数据范围不全，甚至不太看得懂？&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
