@@ -1,63 +1,63 @@
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://blog.huowenjuan/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/post/second/</loc>
-    <lastmod>2024-12-01T08:57:09+08:00</lastmod>
+    <loc>https://blog.huowenjuan/post/second/</loc>
+    <lastmod>2024-12-01T11:13:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-12-01T08:57:09+08:00</lastmod>
+    <loc>https://blog.huowenjuan/post/</loc>
+    <lastmod>2024-12-01T11:13:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-01T08:57:09+08:00</lastmod>
+    <loc>https://blog.huowenjuan/</loc>
+    <lastmod>2024-12-01T11:13:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/first/</loc>
+    <loc>https://blog.huowenjuan/post/first/</loc>
     <lastmod>2020-02-23T16:59:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://blog.huowenjuan/search/</loc>
     <lastmod>2020-02-23T16:59:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/links/</loc>
+    <loc>https://blog.huowenjuan/links/</loc>
     <lastmod>2020-02-23T16:59:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://blog.huowenjuan/about/</loc>
     <lastmod>2020-02-23T16:59:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://blog.huowenjuan/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blog.huowenjuan/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
