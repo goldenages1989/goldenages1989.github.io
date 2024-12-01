@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="glennzhou" /><meta name="description" content="前言 之前在2020年的时候把博客搭建起来了，然后写了第一篇博客，然后过了4年借着学习Emacs的机会，重新把博客拾起来。 下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。
+<meta name="author" content="glz" /><meta name="description" content="前言 之前在2020年的时候把博客搭建起来了，然后写了第一篇博客，然后过了4年借着学习Emacs的机会，重新把博客拾起来。 下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。
 " /><meta name="keywords" content="glennzhou, blog" />
 
 
@@ -47,14 +47,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2024-12-01T20:18:34+08:00">
-    <meta property="article:modified_time" content="2024-12-01T20:18:34+08:00">
+    <meta property="article:published_time" content="2024-12-01T22:13:23+08:00">
+    <meta property="article:modified_time" content="2024-12-01T22:13:23+08:00">
 
   <meta itemprop="name" content="搭建Emacs写博客环境">
   <meta itemprop="description" content="前言 之前在2020年的时候把博客搭建起来了，然后写了第一篇博客，然后过了4年借着学习Emacs的机会，重新把博客拾起来。 下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。">
-  <meta itemprop="datePublished" content="2024-12-01T20:18:34+08:00">
-  <meta itemprop="dateModified" content="2024-12-01T20:18:34+08:00">
-  <meta itemprop="wordCount" content="135">
+  <meta itemprop="datePublished" content="2024-12-01T22:13:23+08:00">
+  <meta itemprop="dateModified" content="2024-12-01T22:13:23+08:00">
+  <meta itemprop="wordCount" content="1727">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="搭建Emacs写博客环境">
   <meta name="twitter:description" content="前言 之前在2020年的时候把博客搭建起来了，然后写了第一篇博客，然后过了4年借着学习Emacs的机会，重新把博客拾起来。 下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。">
@@ -147,8 +147,8 @@
       <div class="post-meta">
         <span class="post-time"> 2024-12-01 </span>
         
-          <span class="more-meta"> 约 135 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 1727 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -174,6 +174,7 @@
             </li>
           </ul>
         </li>
+        <li><a href="#参考文章">参考文章</a></li>
       </ul>
     </li>
   </ul>
@@ -186,19 +187,208 @@
 下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。</p>
 <h2 id="搭建过程">搭建过程</h2>
 <h3 id="原博客底子">原博客底子</h3>
-<p>虽然2020年按照文档搭建博客的时候，</p>
+<p>虽然2020年按照文档搭建博客的时候，写了本博客的第一篇文章，奈何当时写的太简单了，很多细节都没有记录
+现在虽努力回想，也把引用的文章又看了一遍，感觉也对应不上。但是流程还能跑通，主题也挺好看的，就那样吧，最主要还是内容的产出。</p>
+<p>简单记录一下原博客的搭建情况</p>
+<ol>
+<li>通过一个private repository维护了博客的原始md文件(也不知道为啥要设置成private)</li>
+<li>原始博客hugo主目录下的public目录，对应username.github.io仓库</li>
+<li>通过修改原始md文件，然后调用hugo命令生成静态文件到public目录，然后推送到username.github.io仓库</li>
+<li>运行仓库中的Github Action: pages build and deployment，编译生成博客文章</li>
+</ol>
 <h3 id="整合emacs">整合Emacs</h3>
+<p>自从开始学习Emacs之后，就想着把所有能迁移的流程都迁移到Emacs上来，那第一个能双向促进的就是写博客和使用Emacs，所以就有了这篇文章
+但是一开始折腾就停不下来了，想着搭建一个尽善尽美的写作环境，感觉又偏离内容输出第一位的原则了。</p>
 <h4 id="目录结构">目录结构</h4>
+<p>由于要兼容原博客的底子，就没有按照目前主流的gh-pages分支的做法，自己通过git submodule作了一下整合，也能跑通</p>
+<!--list-separator-->
+<ul>
+<li>
+<p>博客原始org文件</p>
+<pre><code class="language-bash">git clone git@github.com:goldenages1989/blogorg.git ~/Hugo/blog
+</code></pre>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>博客gh-pages</p>
+<pre><code class="language-bash">git submodule add git@github.com:goldenages1989/goldenages.github.io.git ~/Hugo/blog/public
+</code></pre>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>主题theme</p>
+<p>原博客用的是even主题，但是随着hugo的升级，有些地方不兼容了，找了一下issue，发现一位好心人修改的<a href="https://github.com/guixian001/hugo-theme-even-v2" target="_blank">even兼容版本</a></p>
+<pre><code class="language-bash">git submodule add git@github.com:guixian001/hugo-theme-even-v2.git ~/Hugo/blog/themes/even
+</code></pre>
+<p>通过上述的目录结构，可以实现几个模块的同步，不管了，能跑起来就行，重要的是内容的输出</p>
+</li>
+</ul>
 <h4 id="ox-hugo">ox-hugo</h4>
+<p>有了博客的框架，再学了一会orgmode的语法，就可以开始愉快的写博客了，写了一会发现要预览结果需要各种在Emacs和Shell之间切换，太麻烦了
+就又一顿搜索，发现了ox-hugo，整上后确实好用，不用到处切换了，在后台默默处理了。</p>
+<ol>
+<li>
+<p>安装ox-hugo</p>
+<pre><code class="language-lisp">(use-package ox-hugo
+        :straight t
+        :after (ox org-mode))
+</code></pre>
+</li>
+<li>
+<p>配置后台自动转换
+在blog目录下新建一个`.dir-locals.el`文件，里面的内容是</p>
+<pre><code class="language-lisp">((org-mode . ((eval . (org-hugo-auto-export-mode)))))
+</code></pre>
+<p>我的目录结构如下所示:</p>
+<figure><img src="/ox-hugo/2024-12-01_21-05-57_7731733058353_.pic.jpg">
+    </figure>
+
+<p>其中:</p>
+<ol>
+<li>
+<p>content是ox-hugo生成的md文件的内容，在子目录post下</p>
+</li>
+<li>
+<p>orgblog是org源文件的目录</p>
+</li>
+<li>
+<p>public刚才说了是gh-pages内容</p>
+<p>通过上述设置即可在保存org的时候自动生成md文件，然后hugo命令进行预览并推送到github</p>
+</li>
+</ol>
+</li>
+<li>
+<p>ox-hugo常用配置</p>
+<pre><code class="language-nil">#+HUGO_BASE_DIR: ~/Hugo/blog/
+#+hugo_front_matter_format: yaml
+#+hugo_auto_set_lastmod: t
+#+HUGO_SECTION: post
+#+TOC: headlines 2
+#+FILETAGS: :Emacs:blog:
+#+author:
+#+hugo_custom_front_matter: :author &quot;glz&quot;
+#+TITLE:$1
+</code></pre>
+<p>参数释义</p>
+<ol>
+<li>
+<p>HUGO_BASE_DIR: 博客站点根目录，即hugo new site生成的目录</p>
+</li>
+<li>
+<p>HUGO_SECTION: 博客文件存在的子目录</p>
+</li>
+<li>
+<p>HUGO_PUBLISHDATE: 博客发布的时间</p>
+</li>
+<li>
+<p>TOC: headlines 2 生成的目录层级</p>
+</li>
+<li>
+<p>FILETAGS: 标签</p>
+</li>
+<li>
+<p>hugo_auto_set_lastmode: 自动更新博客的修改时间</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>使用 `M-x org-hugo-export-to-md` 之后会在 `&lt;HUGO_BASE_DIR&gt;/content/&lt;HUGO_SECTION&gt;/&lt;EXPORT_HUGO_BUNDLE&gt;` 目录下创建 `&lt;EXPORT_FILE_NAME&gt;.md` 文件</p>
+<ol>
+<li>问题
+在配置的过程中发现一个org转md之后，hugo编译报错的问题: `execute of template failed: template: partials/head.html:13:72: executing &ldquo;partials/head.html&rdquo; at &lt;safeHTML&gt;: error calling safeHTML: unable to cast []string{&ldquo;glz&rdquo;} of type []string to string`
+<strong><strong><strong>原因是:</strong></strong></strong> org的author配置是数组，而hugo的template里面配置的是字符串，会转换出错
+<strong><strong>解决方法:</strong></strong> 在上述hugo配置中增加
+<pre><code class="language-nil">#+author:
+#+hugo_custom_front_matter: :author &quot;FirstName LastName&quot;
+</code></pre>
+</li>
+</ol>
 <h4 id="yasnippet">yasnippet</h4>
+<p>由于每次新增博客，新建org都需要配置上述hugo配置，所以通过yasnippet来快速插入</p>
+<ol>
+<li>
+<p>安装</p>
+<pre><code class="language-lisp">     (use-package yasnippet
+  :ensure t
+  :config
+  (yas-global-mode 1))
+
+(use-package yasnippet-snippets
+  :ensure t
+  :after yasnippet)
+</code></pre>
+</li>
+<li>
+<p>配置snippet</p>
+<pre><code class="language-bash">1. M-x yas-new-snippet
+2. 选择对应的mode，一般提示的即可
+3. 填入name,key,content保存C-c C-c
+4. 在要插入的文件中，key&lt;Tab&gt;插入
+</code></pre>
+<p>常规snippet示例</p>
+<pre><code class="language-nil"># -*- mode: snippet -*-
+# name: Angular component
+# key: comp
+# --
+</code></pre>
+<p>带Tabstops示例</p>
+<pre><code class="language-nil">     # -*- mode: snippet -*-
+# name: Angular component
+# key: comp
+# --
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-$2',
+  styleUrls: ['$3.component.scss'],
+  $0
+})
+
+export class $1Component {}
+</code></pre>
+</li>
+</ol>
 <h4 id="org-download">org-download</h4>
+<p>针对博文中要插入图片，推荐用org-download，直接从finder里拖入即可</p>
+<ol>
+<li>
+<p>安装</p>
+<pre><code class="language-nil">    ;;org-download
+(require 'org-download)
+;; Drag-and-drop to `dired`
+(add-hook 'dired-mode-hook 'org-download-enable)
+
+</code></pre>
+</li>
+<li>
+<p>配置图片的显示大小</p>
+<pre><code class="language-nil">(setq org-image-actual-width nil)
+图片前一行加入#+ATTR_ORG: :width 100px
+</code></pre>
+</li>
+</ol>
+<h2 id="参考文章">参考文章</h2>
+<ul>
+<li><a href="https://hsingko.pages.dev/post/2021/04/21/how-to-use-ox-hugo/" target="_blank">用 ox-hugo 写博客 | hsingko</a></li>
+<li><a href="https://blog.opsnull.com/emacs/emacs-ox-hugo/" target="_blank">配置 emacs ox-hugo 包 · Opsnull</a></li>
+<li><a href="https://www.xianmin.org/post/ox-hugo/" target="_blank">博客写作流程之工具篇： emacs, orgmode, hugo &amp; ox-hugo - 贤民的博客</a></li>
+<li><a href="https://www.wenhui.space/docs/04-build-blog-site/org_mode_and_ox_hugo/" target="_blank">使用org-mode和ox-hugo写博客 – Wenhui&rsquo;s Rotten Pen</a></li>
+<li><a href="https://orgmode.org/worg/org-contrib/org-mac-link.html" target="_blank">org-mac-link.el – Grab links from open Mac applications</a></li>
+<li><a href="https://emacs-china.org/t/topic/1933" target="_blank">Org 中显示 inline 图片时，图片尺寸可以控制吗？ - Emacs-general - Emacs China</a></li>
+<li><a href="https://ox-hugo.scripter.co/doc/author/" target="_blank">Author — ox-hugo - Org to Hugo exporter</a></li>
+<li><a href="https://www.howardism.org/Technical/Emacs/templates-tutorial.html" target="_blank">Having Emacs Type for You</a></li>
+</ul>
 
     </div>
 
     <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">文章作者</span>
-    <span class="item-content">glennzhou</span>
+    <span class="item-content">glz</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
