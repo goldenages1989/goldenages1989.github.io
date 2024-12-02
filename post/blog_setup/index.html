@@ -47,14 +47,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2024-12-03T07:31:45+08:00">
-    <meta property="article:modified_time" content="2024-12-02T22:19:21+08:00">
+    <meta property="article:published_time" content="2024-12-03T07:55:16+08:00">
+    <meta property="article:modified_time" content="2024-12-03T07:40:39+08:00">
 
   <meta itemprop="name" content="搭建Emacs写博客环境">
   <meta itemprop="description" content="前言 之前在2020年的时候把博客搭建起来了，然后写了第一篇博客，然后过了4年借着学习Emacs的机会，重新把博客拾起来。 下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。">
-  <meta itemprop="datePublished" content="2024-12-03T07:31:45+08:00">
-  <meta itemprop="dateModified" content="2024-12-02T22:19:21+08:00">
-  <meta itemprop="wordCount" content="1727">
+  <meta itemprop="datePublished" content="2024-12-03T07:55:16+08:00">
+  <meta itemprop="dateModified" content="2024-12-03T07:40:39+08:00">
+  <meta itemprop="wordCount" content="1815">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="搭建Emacs写博客环境">
   <meta name="twitter:description" content="前言 之前在2020年的时候把博客搭建起来了，然后写了第一篇博客，然后过了4年借着学习Emacs的机会，重新把博客拾起来。 下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。">
@@ -147,7 +147,7 @@
       <div class="post-meta">
         <span class="post-time"> 2024-12-03 </span>
         
-          <span class="more-meta"> 约 1727 字 </span>
+          <span class="more-meta"> 约 1815 字 </span>
           <span class="more-meta"> 预计阅读 4 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -172,6 +172,11 @@
                 <li><a href="#org-download">org-download</a></li>
               </ul>
             </li>
+          </ul>
+        </li>
+        <li><a href="#博客美化">博客美化</a>
+          <ul>
+            <li><a href="#字体">字体</a></li>
           </ul>
         </li>
         <li><a href="#参考文章">参考文章</a></li>
@@ -365,12 +370,18 @@ export class $1Component {}
 </code></pre>
 </li>
 <li>
-<p>配置图片的显示大小</p>
+<p>配置图片的显示大小
+<code>=注意:目前只支持设置width，不支持修改height=</code></p>
 <pre><code class="language-nil">(setq org-image-actual-width nil)
-图片前一行加入#+ATTR_ORG: :width 100px
+图片前加入
+#+ATTR_ORG: :width 100px   //原文中
+#+ATTR_HTML: :width 100px  //导出的html
 </code></pre>
 </li>
 </ol>
+<h2 id="博客美化">博客美化</h2>
+<h3 id="字体">字体</h3>
+<p>参照大神的<a href="https://blog.huaxiangshan.com/zh-cn/posts/font/" target="_blank">字体修改</a>的文章进行修改，even主题的样式文件路径不太一样，全局搜索一下字体的配置即可</p>
 <h2 id="参考文章">参考文章</h2>
 <ul>
 <li><a href="https://hsingko.pages.dev/post/2021/04/21/how-to-use-ox-hugo/" target="_blank">用 ox-hugo 写博客 | hsingko</a></li>
@@ -393,8 +404,8 @@ export class $1Component {}
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2024-12-02
-        <a href="https://github.com/goldenages1989/goldenages1989.github.io/commit/bf2e1c7f0d9cb13c7e35f61e98afb1df8912107a" title="feat:org blog">(bf2e1c7)</a>
+        2024-12-03
+        <a href="https://github.com/goldenages1989/goldenages1989.github.io/commit/aa2b854e4915d52ed4e9adbe794c7787135d6b34" title="feat:font">(aa2b854)</a>
     </span>
   </p>
   
