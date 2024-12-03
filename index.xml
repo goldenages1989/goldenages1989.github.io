@@ -6,12 +6,12 @@
     <description>Recent content on 周末的博客</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Dec 2024 07:40:39 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2024 07:57:00 +0800</lastBuildDate>
     <atom:link href="https://blog.huowenjuan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>搭建Emacs写博客环境</title>
       <link>https://blog.huowenjuan/post/blog_setup/</link>
-      <pubDate>Tue, 03 Dec 2024 07:55:16 +0800</pubDate>
+      <pubDate>Tue, 03 Dec 2024 11:43:23 +0800</pubDate>
       <guid>https://blog.huowenjuan/post/blog_setup/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;之前在2020年的时候把博客搭建起来了，然后写了第一篇博客，然后过了4年借着学习Emacs的机会，重新把博客拾起来。&#xA;下面是整个过程，趟了很多坑，这次一一都记录下来，防止后续又忘记了。&lt;/p&gt;</description>
     </item>
