@@ -47,14 +47,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2025-04-06T19:51:54+08:00">
+    <meta property="article:published_time" content="2025-04-06T22:15:27+08:00">
     <meta property="article:modified_time" content="2025-04-06T19:30:57+08:00">
 
   <meta itemprop="name" content="Mac迁移记录">
   <meta itemprop="description" content="前言 前几台电脑都是通过Mac的迁移助手无缝迁移的(确实特别方便)，这次想把家里的落灰的Macmini用起来，想着故技重施。 但是尝试了TimeMachine和迁移助手都失败了，会报新电脑空间不足(Macmini是256G的)，而之前的电脑是500G的，虽然备份的内容只有100G左右。 上网查了各种资料也没有一个明确的结果，只找到一篇帖子，着重说明一定要保证新电脑比旧电脑的磁盘空间要大，否则会有特别奇怪的问题。没办法看来些方法不生效了。">
-  <meta itemprop="datePublished" content="2025-04-06T19:51:54+08:00">
+  <meta itemprop="datePublished" content="2025-04-06T22:15:27+08:00">
   <meta itemprop="dateModified" content="2025-04-06T19:30:57+08:00">
-  <meta itemprop="wordCount" content="838">
+  <meta itemprop="wordCount" content="1260">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mac迁移记录">
   <meta name="twitter:description" content="前言 前几台电脑都是通过Mac的迁移助手无缝迁移的(确实特别方便)，这次想把家里的落灰的Macmini用起来，想着故技重施。 但是尝试了TimeMachine和迁移助手都失败了，会报新电脑空间不足(Macmini是256G的)，而之前的电脑是500G的，虽然备份的内容只有100G左右。 上网查了各种资料也没有一个明确的结果，只找到一篇帖子，着重说明一定要保证新电脑比旧电脑的磁盘空间要大，否则会有特别奇怪的问题。没办法看来些方法不生效了。">
@@ -147,8 +147,8 @@
       <div class="post-meta">
         <span class="post-time"> 2025-04-06 </span>
         
-          <span class="more-meta"> 约 838 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+          <span class="more-meta"> 约 1260 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -165,6 +165,11 @@
           <ul>
             <li><a href="#前置依赖--基本按照先后顺序">前置依赖(基本按照先后顺序)</a></li>
             <li><a href="#命令行相关">命令行相关</a></li>
+            <li><a href="#效率软件">效率软件</a></li>
+            <li><a href="#浏览器">浏览器</a></li>
+            <li><a href="#依赖库">依赖库</a></li>
+            <li><a href="#emacs">Emacs</a></li>
+            <li><a href="#开发工具">开发工具</a></li>
           </ul>
         </li>
       </ul>
@@ -200,20 +205,97 @@
 可以放心地恢复之前的肌肉记忆了</p>
 </li>
 <li>
+<p>Snap
+这个软件虽然一直没有更新，但是一直很用，将常用的软件用snap可以快速打开，一直离不了</p>
+</li>
+<li>
+<p>Synergy
+这次想着一边配置新电脑，一边把配置过程在旧电脑上记录下来，就把以Synergy翻出来了，可以一套键盘鼠标控制两台机器，同时一些配置过程中的文本也可以在两边同步(比如license)</p>
+</li>
+<li>
 <p>清歌输入法
 作为一个手机端全拼，电脑端五笔的用户来说，清歌输入法已经用的很习惯了</p>
 </li>
 <li>
-<p>全局系统配置
-a. 切换输入法: <code>&lt;C-,&gt;</code> 对应 <code>keyboard shortcuts.. -&gt; input sources -&gt; select next source in input menu</code>, 这个快捷键伴我从Window到Mac
-b. 键盘响应配置: <code>key repeat rate: fast</code>, <code>delay unitl repeat: short</code>
-c. 触发角: 右上是Launchpad，左下为Mission Control</p>
+<p>全局系统配置</p>
+<ol>
+<li>
+<p>切换输入法: <code>&lt;C-,&gt;</code> 对应 <code>keyboard shortcuts.. -&gt; input sources -&gt; select next source in input menu</code>, 这个快捷键伴我从Window到Mac</p>
+</li>
+<li>
+<p>键盘响应配置: <code>key repeat rate: fast</code>, <code>delay unitl repeat: short</code></p>
+</li>
+<li>
+<p>触发角: 右上是Launchpad，左下为Mission Control</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Moom
+窗口管理软件</p>
+</li>
+<li>
+<p>Better Touch Tool</p>
+<ol>
+<li>
+<p>安装软件</p>
+</li>
+<li>
+<p>导入license</p>
+</li>
+<li>
+<p>导入从其它电脑中同步的bttpreset</p>
+</li>
+</ol>
 </li>
 </ol>
 <h3 id="命令行相关">命令行相关</h3>
 <ol>
-<li>brew安装</li>
+<li>
+<p>iTerm2
+直接官网下载安装，配置全局打开的快捷键 <code>&lt;C-S-Space&gt;</code></p>
+</li>
+<li>
+<p>oh-my-zsh
+官网安装命令直接安装</p>
+</li>
+<li>
+<p>brew
+官网安装命令直接安装</p>
+</li>
 </ol>
+<h3 id="效率软件">效率软件</h3>
+<ol>
+<li>
+<p>Alfred</p>
+<p>软件直接从官网下载安装，把license配置上就可以用基本功能了
+将Profile设置到 <code>~NutStore/NutStore/SyncConfig</code> 恢复相关Workflow以及配置
+一些Workflow需要依赖库，需要单独配置一下</p>
+</li>
+</ol>
+<!--listend-->
+<ol>
+<li>Raycast
+软件从官网下载安装
+从NutStore把从其它电脑Export的配置，再Import一遍即可</li>
+</ol>
+<h3 id="浏览器">浏览器</h3>
+<ol>
+<li>
+<p>Chrome
+直接官网下载， 然后登录Google帐户进行同步即可</p>
+<p>Surfingkeys由于自己有一些调整，所以需要手动安装</p>
+</li>
+</ol>
+<h3 id="依赖库">依赖库</h3>
+<ol>
+<li>python3: <code>brew install python3</code></li>
+<li>git: <code>brew install git</code></li>
+<li>xcode
+<img src="/ox-hugo/submode.png" alt=""></li>
+</ol>
+<h3 id="emacs">Emacs</h3>
+<h3 id="开发工具">开发工具</h3>
 
     </div>
 

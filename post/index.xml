@@ -11,7 +11,7 @@
     <item>
       <title>Mac迁移记录</title>
       <link>https://blog.huowenjuan/post/mac_migrate/</link>
-      <pubDate>Sun, 06 Apr 2025 19:51:54 +0800</pubDate>
+      <pubDate>Sun, 06 Apr 2025 22:15:27 +0800</pubDate>
       <guid>https://blog.huowenjuan/post/mac_migrate/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;前几台电脑都是通过Mac的迁移助手无缝迁移的(确实特别方便)，这次想把家里的落灰的Macmini用起来，想着故技重施。&#xA;但是尝试了TimeMachine和迁移助手都失败了，会报新电脑空间不足(Macmini是256G的)，而之前的电脑是500G的，虽然备份的内容只有100G左右。&#xA;上网查了各种资料也没有一个明确的结果，只找到一篇帖子，着重说明一定要保证新电脑比旧电脑的磁盘空间要大，否则会有特别奇怪的问题。没办法看来些方法不生效了。&lt;/p&gt;</description>
     </item>
