@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.139.2 with theme even" />
+<meta name="generator" content="Hugo 0.146.2 with theme even" />
 
 
 <link rel="canonical" href="https://blog.huowenjuan/post/mac_migrate/" />
@@ -47,14 +47,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2025-04-12T18:03:41+08:00">
-    <meta property="article:modified_time" content="2025-04-06T19:30:57+08:00">
+    <meta property="article:published_time" content="2025-04-20T17:54:31+08:00">
+    <meta property="article:modified_time" content="2025-04-20T17:54:42+08:00">
 
   <meta itemprop="name" content="Mac迁移记录">
   <meta itemprop="description" content="前言 前几台电脑都是通过Mac的迁移助手无缝迁移的(确实特别方便)，这次想把家里的落灰的Macmini用起来，想着故技重施。 但是尝试了TimeMachine和迁移助手都失败了，会报新电脑空间不足(Macmini是256G的)，而之前的电脑是500G的，虽然备份的内容只有100G左右。 上网查了各种资料也没有一个明确的结果，只找到一篇帖子，着重说明一定要保证新电脑比旧电脑的磁盘空间要大，否则会有特别奇怪的问题。没办法看来些方法不生效了。">
-  <meta itemprop="datePublished" content="2025-04-12T18:03:41+08:00">
-  <meta itemprop="dateModified" content="2025-04-06T19:30:57+08:00">
-  <meta itemprop="wordCount" content="1955">
+  <meta itemprop="datePublished" content="2025-04-20T17:54:31+08:00">
+  <meta itemprop="dateModified" content="2025-04-20T17:54:42+08:00">
+  <meta itemprop="wordCount" content="2054">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mac迁移记录">
   <meta name="twitter:description" content="前言 前几台电脑都是通过Mac的迁移助手无缝迁移的(确实特别方便)，这次想把家里的落灰的Macmini用起来，想着故技重施。 但是尝试了TimeMachine和迁移助手都失败了，会报新电脑空间不足(Macmini是256G的)，而之前的电脑是500G的，虽然备份的内容只有100G左右。 上网查了各种资料也没有一个明确的结果，只找到一篇帖子，着重说明一定要保证新电脑比旧电脑的磁盘空间要大，否则会有特别奇怪的问题。没办法看来些方法不生效了。">
@@ -145,10 +145,10 @@
       <h1 class="post-title">Mac迁移记录</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2025-04-12 </span>
+        <span class="post-time"> 2025-04-20 </span>
         
-          <span class="more-meta"> 约 1955 字 </span>
-          <span class="more-meta"> 预计阅读 4 分钟 </span>
+          <span class="more-meta"> 约 2054 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -296,9 +296,19 @@ OrgMode相关目录配置:</p>
 </ol>
 <!--listend-->
 <ol>
-<li>Raycast
+<li>
+<p>Raycast
 软件从官网下载安装
-从NutStore把从其它电脑Export的配置，再Import一遍即可</li>
+从NutStore把从其它电脑Export的配置，再Import一遍即可</p>
+</li>
+<li>
+<p>Hookmark
+Hookmark可以通过iCloud进行同步，但是配置的cheat workflow刚开始不生效，需要将applescript脚本先在脚本编辑器里面执行一遍，把相应的系统权限
+通过之后，才能正常使用</p>
+</li>
+<li>
+<p>SafeInCloud2</p>
+</li>
 </ol>
 <h3 id="浏览器">浏览器</h3>
 <ol>
@@ -404,8 +414,8 @@ OrgMode相关目录配置:</p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2025-04-06
-        <a href="https://github.com/goldenages1989/goldenages1989.github.io/commit/00cabe6b17b71ceaf9c28296ede36d6e0bed96ae" title="feat:mac mirgrate">(00cabe6)</a>
+        2025-04-20
+        <a href="https://github.com/goldenages1989/goldenages1989.github.io/commit/794242f802a278a6b0bfb53a0890aee061a9f8bc" title="feat:hookmark">(794242f)</a>
     </span>
   </p>
   
